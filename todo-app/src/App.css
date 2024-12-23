@@ -1,0 +1,138 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f3f8fc, #dceefb);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App Container */
+.app {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add Task Section */
+.add-todo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-todo button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.add-todo button:hover {
+  background-color: #357ABD;
+}
+
+/* Task List Styling */
+.todo-list,
+.done-tasks ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item:hover {
+  background: #f1f8ff;
+}
+
+/* Task Text Styling */
+.todo-item span {
+  flex: 1;
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #333;
+}
+
+.todo-item.done span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Button Styles */
+.todo-item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.todo-item button.edit {
+  background-color: #4caf50;
+}
+
+.todo-item button.like {
+  background-color: #f39c12;
+}
+
+.todo-item button:hover {
+  opacity: 0.8;
+}
+
+/* Done Tasks Section */
+.done-tasks {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f7fdfd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.done-tasks h2 {
+  font-size: 1.5rem;
+  color: #27ae60;
+  text-align: center;
+  margin-bottom: 15px;
+}
